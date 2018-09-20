@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1 style="text-align: center" >Crumblyy LifeHacks</h1>
   <v-carousel v-if="hacks.length > 0" hide-delimiters hide-controls>
     <v-carousel-item
       v-for="(hack,i) in hacks"
@@ -21,7 +20,7 @@ export default {
     return {
       styleObject:{
         height:"100%",
-        width:"100%"
+        width: 'inherit'
       },
       hacks: []
     };
